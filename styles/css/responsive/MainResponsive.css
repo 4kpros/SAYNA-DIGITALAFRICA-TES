@@ -25,9 +25,8 @@
     .navbar-menu{
         display: block;
     }
-
-    .first-section .btn-group{
-        margin: 2rem 0 1rem 0;
+    .first-section .btn-container{
+        margin-top: 2rem;
     }
 
     .third-section-content h1, .third-section-content p{
@@ -110,6 +109,16 @@
 @media screen and (max-width: 600px){
     .navbar-menu{
         display: none;
+    }
+    .first-section .btn-container{
+        margin-top: 1rem;
+    }
+    .first-section .btn-container a{
+        margin-right: 1rem;
+        margin-top: 0.5rem;
+    }
+    .first-section h2{
+        margin-top: 1rem;
     }
     .first-section img{
         height: 40vh;
