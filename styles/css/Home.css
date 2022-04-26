@@ -15,20 +15,21 @@
     --farfromhome-font: 'FarFromHome', sans-serif;
 }
 * {
-    font-family: var(--main-font);
-    transition: .2s;
 }
 *, *::before, *::after{
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 body{
     width: 100%;
+    font-family: var(--main-font);
     background: var(--my-red-color);
     color: #fff;
-    margin: 0;
 }
-
+a{
+    text-decoration: none;
+}
 /* Text settings */
 h1{
     font-size: 32px;
@@ -37,19 +38,24 @@ h1{
 }
 h2{
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 700;
 }
 h3{
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
 }
 .text-subtitle{
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
 }
 .text{
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 300;
+    color: #fff;
+}
+img{
+    display: block;
+    max-width: 100%;
 }
 
 /* Containers settings */
@@ -137,6 +143,11 @@ h3{
     flex-direction: row;
     margin: 8rem 0 2rem 0;
 }
+.btn-full, .btn-full-2, .btn-bordered, .btn-bordered-2{
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
 .btn-full:hover, .btn-full-2:hover, .btn-bordered:hover, .btn-bordered-2:hover{
     cursor: pointer;
 }
@@ -172,7 +183,7 @@ h3{
 .second-section .grid{
     display: grid;
     grid-template-columns: auto auto auto;
-    column-gap: 7rem;
+    column-gap: 6rem;
     margin: 2rem 0;
 }
 .second-section .grid-content{
@@ -190,6 +201,10 @@ h3{
 .second-section .grid-content ul{
     margin-top: 0;
     margin-bottom: 0;
+    padding-left: 2rem;
+}
+.second-section .grid-content ul li{
+    font-weight: 300;
 }
 .second-section .grid-content img{
     width: 100%;
@@ -257,7 +272,7 @@ h3{
     padding: 8px 25px;
     border: none;
     border-radius: 20px;
-    width: 25rem;
+    max-width: 25rem;
     border: black solid 2px;
     font-weight: 600;
 }
@@ -267,24 +282,27 @@ h3{
 .fourth-section{
     width: 100%;
     position: relative;
-    text-align: end;
+    overflow: hidden;
 }
-.absolute-left-container{
-    width: 100%;
-    height: 100%;
-    max-width: 82rem;
-    padding: 0 2rem;
+.fourth-section img{
     position: absolute;
-    top: 0%;
-    left: 50%;                   /* Move 50% from left */
-    transform: translateX(-50%); /* Move button Center position  */
+    height: 100%;
+    bottom: 0;
+    right: -10%;
+    object-fit: contain;
+    object-position: bottom;
+    z-index: -1;
 }
 .left-content{
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 7rem;
+    padding-top: 7rem;
+    padding: 5rem 0;
+}
+.fourth-section-content{
+    max-width: 35rem;
 }
 .fourth-section-content{
     max-width: 35rem;
@@ -300,7 +318,7 @@ h3{
 .fourth-section-content div{
     display: flex;
     flex-direction: column;
-    margin-top: 3rem;
+    margin-top: 3.5rem;
 }
 .fourth-section-content div .input-field{
     margin: 10px 0;
@@ -310,13 +328,14 @@ h3{
     text-decoration-color: #fff;
     border-radius: 20px;
     width: 22rem;
+    max-width: 60%;
     background-color: transparent;
 }
 .fourth-section-content div .check-group{
     display: flex;
     flex-direction: row;
-    margin-top: 1.5rem;
     flex-wrap:nowrap;
+    margin-top: 1rem;
     margin-left: 1rem;
     max-width: 25rem;
 }
@@ -337,13 +356,31 @@ h3{
     padding-top: 5rem;
     padding-bottom: 2rem;
 }
-.footer-line-1{
+.phones-mini-tablets{
+    display: none;
+}
+.tablets-pc{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
     width: 100%;
 }
-.footer-line-1 div{
+.tablets-pc div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footer-line-1 .tablets-pc .footer-brand{
+    display: flex;
+    flex-direction: row;
+}
+.footer-line-1 .tablets-pc .line-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.footer-line-1 sdadas{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -372,6 +409,9 @@ h3{
     justify-content: center;
     width: 100%;
     margin-top: 2rem;
+}
+.footer-line-3 p{
+    text-align:center;
 }
 .footer-language select{
     background: var(--my-red-color);

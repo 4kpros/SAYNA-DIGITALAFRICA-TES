@@ -1,0 +1,138 @@
+/* Big Tablets */
+@media screen and (max-width: 1280px){
+    
+    .footer-language select{
+        border-radius: 25px;
+        padding: 10px 25px;
+        width: 9rem;
+    }
+    .footer-brand img{
+        height: 30px;
+        width: auto;
+        object-fit: scale-down;
+        margin: 0;
+    }
+    .fourth-section img{
+        height: 70%;
+    }
+}
+
+/* Mini Tablets */
+@media screen and (max-width: 900px){
+    .navbar-menu{
+        display: block;
+    }
+
+    .fourth-section-content div .input-field{
+        max-width: 60%;
+    }
+    .fourth-section img{
+        right: -20%;
+    }
+    .tablets-pc{
+        display: none;
+    }
+    .phones-mini-tablets{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-line-1 .phones-mini-tablets .line-1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .footer-line-1 .phones-mini-tablets .line-1 .footer-left-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .footer-line-1 .phones-mini-tablets .line-1 .footer-left-content p{
+        margin-bottom: 1rem;
+        margin-right: 5px;
+    }
+    .footer-line-1 .phones-mini-tablets .line-2{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .footer-line-1 .phones-mini-tablets .line-2 div{
+        display: flex;
+        max-width: 100%;
+    }
+    
+    .second-section .section-content .grid{
+        grid-template-columns: auto auto;
+        row-gap: 6rem;
+    }
+    
+    .footer-language select{
+        border-radius: 25px;
+        padding: 10px 25px;
+        width: 7rem;
+    }
+    .footer-line-2{
+        margin-top: 2.5rem;
+    }
+    .footer-line-2 .social-media-item{
+        margin: 0 0.5rem;
+    }
+    .footer-brand img{
+        height: 40px;
+        width: auto;
+        object-fit: scale-down;
+        margin: 0;
+    }
+    .footer-line-3{
+        margin-top: 1rem;
+    }
+}
+
+/* Mobiles Phones */
+@media screen and (max-width: 600px){
+    .navbar-menu{
+        display: none;
+    }
+    .fourth-section img{
+        right: -30%;
+    }
+    .fourth-section .button-group{
+        margin-top: 0rem;
+    }
+    .fourth-section-content h1, .fourth-section-content p{
+        text-align: center;
+    }
+    
+    .second-section .section-content .grid{
+        grid-template-columns: auto;
+        row-gap: 3rem;
+    }
+
+    .second-section .title-content h1, .second-section .title-content p{
+        text-align: center;
+        max-width: 100%;
+    }
+    .second-section .section-content .grid-content img{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .second-section .section-content .grid-content p{
+        text-align: center;
+    }
+    .second-section .section-content .grid-content ul{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+/* Mini Phones */
+@media screen and (max-width: 350px){
+    .footer-brand img{
+        height: 30px;
+        width: auto;
+        object-fit: scale-down;
+        margin: 0;
+    }
+}
