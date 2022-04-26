@@ -21,6 +21,9 @@
     .navbar-menu{
         display: flex;
     }
+    .navbar-menu .nav-link{
+        padding-left: 3rem;
+    }
 }
 
 /* Mini Tablets */
@@ -136,9 +139,8 @@
     .first-section .btn-container{
         margin-top: 1rem;
     }
-    .first-section .btn-container a{
+    .first-section .btn-container a:nth-child(1){
         margin-right: 1rem;
-        margin-top: 0.5rem;
     }
     .first-section h2{
         margin-top: 1rem;

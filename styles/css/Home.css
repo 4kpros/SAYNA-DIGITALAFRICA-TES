@@ -3,6 +3,13 @@
 /*===== GOOGLE FONTS =====*/
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Poppins:wght@300&display=swap');
+
+@font-face {
+    font-family: 'Typo-FarFromHomecoming';
+    src: url('/styles/fonts/Typo-FarFromHomecoming.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 /*===== VARIABLES CSS =====*/
 :root{
     
@@ -12,7 +19,6 @@
 
     /*===== TYPOGRAPHY =====*/
     --main-font: 'Montserrat', sans-serif;
-    --farfromhome-font: 'FarFromHome', sans-serif;
 }
 * {
 }
@@ -34,7 +40,7 @@ a{
 h1{
     font-size: 32px;
     font-weight: 500;
-    font-family: var(--farfromhome-font);
+    font-family: 'Typo-FarFromHomecoming';
 }
 h2{
     font-size: 20px;
@@ -51,7 +57,7 @@ h3{
 .text{
     font-size: 14px;
     font-weight: 300;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.9);
 }
 img{
     display: block;
@@ -142,8 +148,7 @@ img{
 }
 .navbar-menu .nav-link{
     color: #fff;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-left: 4rem;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
@@ -186,13 +191,15 @@ img{
     flex-direction: column;
     align-items: flex-start;
 }
-.first-section .full-content-centered div{
+.first-section .full-content-centered .content{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: flex-start;
 }
-.first-section .full-content-centered div .btn-container{
+.first-section .full-content-centered .content .btn-container{
     display: flex;
+    flex-direction: row;
     align-items: flex-start;
 }
 .first-section .full-content-centered h1{
@@ -205,8 +212,10 @@ img{
     margin-top: 5rem;
 }
 .first-section .btn-container a{
-    margin-right: 2rem;
     margin-top: 0.5rem;
+}
+.first-section .btn-container a:nth-child(1){
+    margin-right: 2rem;
 }
 .first-section h2{
     margin-top: 2rem;
@@ -235,6 +244,9 @@ img{
 .second-section .grid-content .img-padding-2{
     padding-bottom: 2rem;
 }
+.second-section .grid-content div{
+    margin-top: 2rem;
+}
 .second-section .grid-content p{
     text-align: justify;
     text-justify: inter-word;
@@ -243,8 +255,7 @@ img{
     padding: 0;
 }
 .second-section .grid-content ul{
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
     padding-left: 2rem;
 }
 .second-section .grid-content ul li{
@@ -252,6 +263,8 @@ img{
 }
 .second-section .grid-content img{
     width: 100%;
+    object-fit: contain;
+    object-position: top;
 }
 .second-section .grid-content .img-padding-2{
     /* padding-bottom: 15px; */
@@ -445,7 +458,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 1rem;
+    margin: 0 0.6rem;
 }
 .footer-line-3{
     display: flex;
