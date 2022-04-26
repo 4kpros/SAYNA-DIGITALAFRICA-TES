@@ -25,6 +25,11 @@
     .navbar-menu{
         display: block;
     }
+
+    .first-section .btn-group{
+        margin: 2rem 0 1rem 0;
+    }
+
     .third-section-content h1, .third-section-content p{
         text-align: center;
     }
@@ -106,6 +111,15 @@
     .navbar-menu{
         display: none;
     }
+
+    .first-section .btn-group{
+        margin: 1rem 0 1rem 0;
+    }
+    .first-section img{
+        height: 40vh;
+        margin-bottom: 2rem;
+    }
+
     .fourth-section img{
         right: -30%;
     }
@@ -144,24 +158,42 @@
 
 /* Mini Phones */
 @media screen and (max-width: 350px){
-    .footer-brand img{
-        height: 30px;
-        width: auto;
-        object-fit: scale-down;
-        margin: 0;
-    }
-    .footer-line-2 .social-media-item {
-        width: 35px;
-        height: 35px;
-    }
-    .fourth-section-content div .check-group {
-        flex-direction: column;
+
+    
+    .first-section img{
+        height: 50vh;
     }
 
     .fourth-section div .input-field{
         max-width: 100%;
     }
     .fourth-section-content div .check-group {
+        flex-direction: row;
+    }
+    .fourth-section-content h1{
+        overflow-wrap: anywhere;
+    }
+
+    .footer-brand img{
+        height: 30px;
+        width: auto;
+        object-fit: scale-down;
+        margin: 0;
+    }
+    .footer-line-1 .phones-mini-tablets .line-1{
         flex-direction: column;
+    }
+    .footer-line-1 .phones-mini-tablets .line-1 .footer-language{
+        margin: 0.5rem 0;
+    }
+    .footer-line-1 .phones-mini-tablets .footer-brand img{
+        height: 20px;
+    }
+    .footer-line-2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-line-2 .social-media-item {
+        margin: 0.5rem;
     }
 }
