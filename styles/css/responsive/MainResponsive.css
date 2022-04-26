@@ -12,8 +12,11 @@
         object-fit: scale-down;
         margin: 0;
     }
+}
+/* Semi-Big Tablets */
+@media screen and (max-width: 1100px){
     .fourth-section img{
-        height: 70%;
+        height: 80%;
     }
 }
 
