@@ -157,13 +157,17 @@ img{
 .first-section .full-content-centered h1{
     overflow-wrap: anywhere;
 }
-.first-section .btn-group{
+.first-section .btn-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 8rem 0 2rem 0;
+    margin-top: 1rem;
 }
-.first-section .btn-group a{
+.first-section .btn-container a{
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+}
+.first-section h2{
     margin-top: 1rem;
 }
 .btn-full, .btn-full-2, .btn-bordered, .btn-bordered-2{

@@ -111,13 +111,12 @@
     .navbar-menu{
         display: none;
     }
-
-    .first-section .btn-group{
-        margin: 1rem 0 1rem 0;
-    }
     .first-section img{
         height: 40vh;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
+    }
+    .first-section .btn-group{
+        margin: 0;
     }
 
     .fourth-section img{
