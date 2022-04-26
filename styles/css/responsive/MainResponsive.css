@@ -25,7 +25,15 @@
     .navbar-menu{
         display: block;
     }
-
+    .third-section-content h1, .third-section-content p{
+        text-align: center;
+    }
+    .third-section-content div .input-field{
+        width: 90%;
+    }
+    .third-section .right-content{
+        align-items: center;
+    }
     .fourth-section-content div .input-field{
         max-width: 60%;
     }
@@ -128,6 +136,10 @@
         width: 80%;
         margin: auto;
     }
+    .second-section .section-content .grid-content img {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 }
 
 /* Mini Phones */
@@ -137,5 +149,19 @@
         width: auto;
         object-fit: scale-down;
         margin: 0;
+    }
+    .footer-line-2 .social-media-item {
+        width: 35px;
+        height: 35px;
+    }
+    .fourth-section-content div .check-group {
+        flex-direction: column;
+    }
+
+    .fourth-section div .input-field{
+        max-width: 100%;
+    }
+    .fourth-section-content div .check-group {
+        flex-direction: column;
     }
 }
