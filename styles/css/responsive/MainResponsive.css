@@ -18,15 +18,38 @@
     .fourth-section img{
         height: 80%;
     }
+    .navbar-menu{
+        display: flex;
+    }
 }
 
 /* Mini Tablets */
 @media screen and (max-width: 900px){
-    .navbar-menu{
-        display: block;
+
+    .navbar{
+        display: none;
     }
+    .navbar-menu{
+        display: none;
+    }
+    
+    .btn-full, .btn-full-2, .btn-bordered, .btn-bordered-2{
+        border-radius: 40px;
+    }
+
     .first-section .btn-container{
         margin-top: 2rem;
+    }
+    .first-section .absolute-container .full-content {
+        justify-content: flex-start;
+    }
+    .first-section .full-content .top-brand{
+        display: flex;
+        margin: 2rem 0 5rem 0;
+    }
+    .first-section .full-content .top-brand img{
+        height: 40px;
+        object-fit: scale-down;
     }
 
     .third-section-content h1, .third-section-content p{
@@ -41,7 +64,7 @@
     .fourth-section-content div .input-field{
         max-width: 60%;
     }
-    .fourth-section img{
+    .fourth-section .headline-image{
         right: -20%;
     }
     .tablets-pc{
@@ -107,9 +130,6 @@
 
 /* Mobiles Phones */
 @media screen and (max-width: 600px){
-    .navbar-menu{
-        display: none;
-    }
     .first-section .btn-container{
         margin-top: 1rem;
     }
@@ -120,12 +140,15 @@
     .first-section h2{
         margin-top: 1rem;
     }
-    .first-section img{
-        height: 40vh;
+    .first-section .headline-image{
+        height: 50vh;
         margin-bottom: 3rem;
     }
     .first-section .btn-group{
         margin: 0;
+    }
+    .first-section .section-subtile{
+        font-size: 16px;
     }
 
     .fourth-section img{
@@ -141,6 +164,9 @@
     .second-section .section-content .grid{
         grid-template-columns: auto;
         row-gap: 3rem;
+    }
+    .second-section .title-content h1{ 
+        margin-top: 3rem;
     }
 
     .second-section .title-content h1, .second-section .title-content p{
@@ -167,9 +193,12 @@
 /* Mini Phones */
 @media screen and (max-width: 350px){
 
+    .navbar-brand .brand-part img{
+        height: 20px;
+    }
     
-    .first-section img{
-        height: 50vh;
+    .first-section .full-content .top-brand img{
+        height: 20px;
     }
 
     .fourth-section div .input-field{
