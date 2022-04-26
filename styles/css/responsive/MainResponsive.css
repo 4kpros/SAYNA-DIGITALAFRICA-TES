@@ -51,6 +51,9 @@
         height: 40px;
         object-fit: scale-down;
     }
+    .first-section .headline-image{
+        height: 50vh;
+    }
 
     .third-section-content h1, .third-section-content p{
         text-align: center;
@@ -129,7 +132,7 @@
 }
 
 /* Mobiles Phones */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 580px){
     .first-section .btn-container{
         margin-top: 1rem;
     }
@@ -139,10 +142,6 @@
     }
     .first-section h2{
         margin-top: 1rem;
-    }
-    .first-section .headline-image{
-        height: 50vh;
-        margin-bottom: 3rem;
     }
     .first-section .btn-group{
         margin: 0;
@@ -168,7 +167,6 @@
     .second-section .title-content h1{ 
         margin-top: 3rem;
     }
-
     .second-section .title-content h1, .second-section .title-content p{
         text-align: center;
         max-width: 100%;
