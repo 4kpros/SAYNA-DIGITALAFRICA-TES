@@ -10,7 +10,7 @@
         height: 30px;
     }
 }
-/* Semi-Big Tablets */
+/* Tablets */
 @media screen and (max-width: 1100px){
     .fourth-section img{
         height: 80%;
@@ -23,7 +23,7 @@
     }
 }
 
-/* Mini Tablets */
+/* Semi Tablets */
 @media screen and (max-width: 900px){
 
     .big-title{
@@ -51,14 +51,11 @@
     }
     .first-section .full-content .top-brand{
         display: flex;
-        margin: 2rem 0 5rem 0;
+        margin: 2rem 0 0rem 0;
     }
     .first-section .full-content .top-brand img{
         height: 40px;
         object-fit: scale-down;
-    }
-    .first-section .headline-image{
-        height: 50vh;
     }
     .first-section .full-content-centered .content {
         flex-direction: column-reverse;
@@ -144,6 +141,13 @@
     }
 }
 
+/* Mini Tablets */
+@media screen and (max-width: 720px){
+    .first-section .headline-image{
+        height: 70vh;
+    }
+}
+
 /* Mobiles Phones */
 @media screen and (max-width: 580px){
     .big-title{
@@ -170,6 +174,7 @@
     }
     .first-section .headline-image{
         object-position: bottom;
+        height: 50vh;
     }
 
     .fourth-section img{
@@ -210,8 +215,16 @@
     }
 }
 
+/* Small Phones */
+@media screen and (max-width: 392px){
+    .first-section .headline-image{
+        height: 60vh;
+    }
+}
+
+
 /* Mini Phones */
-@media screen and (max-width: 350px){
+@media screen and (max-width: 320px){
     .big-title{
         font-size: 26px;
     }
@@ -236,6 +249,9 @@
     .fourth-section-content h1{
         overflow-wrap: anywhere;
     }
+    .first-section .headline-image{
+        height: 65vh;
+    }
 
     .footer-line-1 .phones-mini-tablets .line-1{
         flex-direction: column;
@@ -254,3 +270,4 @@
         margin: 0.5rem;
     }
 }
+

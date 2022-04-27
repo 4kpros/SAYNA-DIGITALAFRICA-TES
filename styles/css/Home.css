@@ -9,6 +9,11 @@
     src: url("../fonts/FromHomecomingUpdated.otf") format("opentype");
     font-style: normal;
 }
+@font-face {
+    font-family: 'MontserratVariableFont_wght'; 
+    src: url("../fonts/MontserratVariableFont_wght.ttf") format("truetype");
+    font-style: normal;
+}
 
 /*===== VARIABLES CSS =====*/
 :root{
@@ -18,7 +23,7 @@
     --my-blue-color: #114C92;
 
     /*===== TYPOGRAPHY =====*/
-    --main-font: 'Montserrat', sans-serif;
+    --main-font: 'MontserratVariableFont_wght';
 }
 * {
 }
@@ -60,7 +65,7 @@ h3{
 .text{
     font-size: 14px;
     font-weight: 400;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
 }
 img{
     display: block;
@@ -193,6 +198,7 @@ img{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin: auto 0;
 }
 .first-section .full-content-centered .content{
     display: flex;
