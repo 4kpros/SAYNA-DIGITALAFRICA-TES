@@ -278,3 +278,16 @@
     }
 }
 
+/* Nano Phones */
+@media screen and (max-width: 240px){
+    
+    .first-section .full-content .top-brand img{
+        height: 20px;
+    }
+    .footer-line-1 .phones-mini-tablets .footer-brand img{
+        height: 15px;
+    }
+    .container{
+        padding: 0 0.25rem;
+    }
+}
