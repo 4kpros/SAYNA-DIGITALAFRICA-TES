@@ -61,10 +61,6 @@
         flex-direction: column-reverse;
     }
 
-    .second-section .grid-content div {
-        margin-top: 1rem;
-    }
-
     .third-section-content h1, .third-section-content p{
         text-align: center;
     }
@@ -198,10 +194,6 @@
         text-align: center;
         max-width: 100%;
     }
-    .second-section .section-content .grid-content img{
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
     .second-section .section-content .grid-content p{
         text-align: center;
     }
@@ -212,6 +204,7 @@
     .second-section .section-content .grid-content img {
         padding-left: 2rem;
         padding-right: 2rem;
+        margin-bottom: 1.5rem;
     }
 }
 
@@ -220,8 +213,10 @@
     .first-section .headline-image{
         height: 60vh;
     }
+    .second-section .grid-content img{
+        height: 200px;
+    }
 }
-
 
 /* Mini Phones */
 @media screen and (max-width: 320px){
@@ -238,6 +233,11 @@
     
     .first-section .full-content .top-brand img{
         height: 20px;
+    }
+
+    .second-section .grid-content img{
+        height: 180px;
+        margin-bottom: 1rem;
     }
 
     .fourth-section div .input-field{
