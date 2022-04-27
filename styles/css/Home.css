@@ -39,13 +39,11 @@ a{
 /* Text settings */
 .big-title{
     font-size: 80px;
-    font-weight: 500;
-    font-family: 'FromHomecomingUpdated';
 }
 h1{
-    font-size: 46px;
-    font-weight: 500;
+    font-size: 33px;
     font-family: 'FromHomecomingUpdated';
+    text-transform: uppercase;
 }
 h2{
     font-size: 20px;
@@ -453,6 +451,14 @@ img{
     margin-top: 5rem;
 }
 .footer-brand img{
+    object-fit: scale-down;
+}
+.footer-brand img:nth-child(2){
+    max-height: 50%;
+    margin: auto;
+}
+.footer-line-1 .tablets-pc .footer-brand img{
+    height: 40px;
     margin: 5px;
 }
 .footer-line-2 .social-media-item{

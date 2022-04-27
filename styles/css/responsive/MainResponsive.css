@@ -6,11 +6,8 @@
         padding: 10px 25px;
         width: 9rem;
     }
-    .footer-brand img{
+    .footer-line-1 .phones-mini-tablets .footer-brand img{
         height: 30px;
-        width: auto;
-        object-fit: scale-down;
-        margin: 0;
     }
 }
 /* Semi-Big Tablets */
@@ -29,6 +26,12 @@
 /* Mini Tablets */
 @media screen and (max-width: 900px){
 
+    .big-title{
+        font-size: 56px;
+    }
+    h1{
+        font-size: 28px;
+    }
     .navbar{
         display: none;
     }
@@ -56,6 +59,13 @@
     }
     .first-section .headline-image{
         height: 50vh;
+    }
+    .first-section .full-content-centered .content {
+        flex-direction: column-reverse;
+    }
+
+    .second-section .grid-content div {
+        margin-top: 1rem;
     }
 
     .third-section-content h1, .third-section-content p{
@@ -91,10 +101,13 @@
         flex-direction: column;
         justify-content: space-between;
         width: 100%;
+        margin-right: 10px;
+    }
+    .footer-line-1 .phones-mini-tablets .line-1 .footer-left-content a{
+        margin-bottom: 8px;
     }
     .footer-line-1 .phones-mini-tablets .line-1 .footer-left-content p{
         margin-bottom: 1rem;
-        margin-right: 5px;
     }
     .footer-line-1 .phones-mini-tablets .line-2{
         display: flex;
@@ -123,11 +136,8 @@
     .footer-line-2 .social-media-item{
         margin: 0 0.5rem;
     }
-    .footer-brand img{
+    .footer-line-1 .phones-mini-tablets .footer-brand img{
         height: 40px;
-        width: auto;
-        object-fit: scale-down;
-        margin: 0;
     }
     .footer-line-3{
         margin-top: 1rem;
@@ -136,6 +146,13 @@
 
 /* Mobiles Phones */
 @media screen and (max-width: 580px){
+    .big-title{
+        font-size: 36px;
+    }
+    h1{
+        font-size: 20px;
+    }
+
     .first-section .btn-container{
         margin-top: 1rem;
     }
@@ -150,6 +167,9 @@
     }
     .first-section .section-subtile{
         font-size: 16px;
+    }
+    .first-section .headline-image{
+        object-position: bottom;
     }
 
     .fourth-section img{
@@ -192,6 +212,12 @@
 
 /* Mini Phones */
 @media screen and (max-width: 350px){
+    .big-title{
+        font-size: 26px;
+    }
+    h1{
+        font-size: 16px;
+    }
 
     .navbar-brand .brand-part img{
         height: 20px;
@@ -211,12 +237,6 @@
         overflow-wrap: anywhere;
     }
 
-    .footer-brand img{
-        height: 30px;
-        width: auto;
-        object-fit: scale-down;
-        margin: 0;
-    }
     .footer-line-1 .phones-mini-tablets .line-1{
         flex-direction: column;
     }
