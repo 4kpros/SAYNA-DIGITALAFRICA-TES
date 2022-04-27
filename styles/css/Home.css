@@ -34,8 +34,8 @@
 }
 body{
     width: 100%;
-    font-family: var(--main-font);
-    background: var(--my-red-color);
+    font-family: 'MontserratVariableFont_wght';
+    background: #B11313;
     color: #fff;
 }
 a{
@@ -131,7 +131,7 @@ img{
 }
 .navbar-brand{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, auto);
     column-gap: 1rem;
     margin-top: auto;
     margin-bottom: auto;
@@ -254,6 +254,8 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: -webkit-fill-available;
+    height: -moz-available;
 }
 .second-section .grid-content p{
     text-align: justify;
