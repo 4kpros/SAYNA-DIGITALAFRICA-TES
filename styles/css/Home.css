@@ -1,47 +1,58 @@
 
 
-/*===== GOOGLE FONTS =====*/
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Poppins:wght@300&display=swap');
-
+/*===== IMPORT EXTERNAL LOCAL FONT =====*/
+/* FromHomecoming font */
 @font-face {
     font-family: 'FromHomecomingUpdated'; 
     src: url("../fonts/FromHomecomingUpdated.otf") format("opentype");
     font-style: normal;
 }
+/* Montserrat font */
 @font-face {
     font-family: 'MontserratVariableFont_wght'; 
     src: url("../fonts/MontserratVariableFont_wght.ttf") format("truetype");
     font-style: normal;
 }
 
-/*===== VARIABLES CSS =====*/
+/*===== CSS VARIABLES =====*/
 :root{
-    
+    /* Colors variables */
     --my-red-color: #B11313;
     --my-yellow-color: #F1C530;
     --my-blue-color: #114C92;
 
-    /*===== TYPOGRAPHY =====*/
+    /* Font variables */
     --main-font: 'MontserratVariableFont_wght';
 }
-* {
-}
+
+/*===== SETUP DEFAULT PROPERTIES =====*/
 *, *::before, *::after{
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
 }
+
+/*===== GLOBAL WIDGET SETTINGS =====*/
 body{
     width: 100%;
     font-family: 'MontserratVariableFont_wght';
     background: #B11313;
     color: #fff;
 }
-a{
-    text-decoration: none;
+.container{
+    width: 100%;
+    max-width: 82rem;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
-/* Text settings */
+img{
+    display: block;
+    max-width: 100%;
+}
+select::-ms-expand {
+    display: none;
+}
+
+/*===== TEXT PROPERTIES =====*/
 .big-title{
     font-size: 80px;
 }
@@ -64,23 +75,13 @@ h3{
 }
 .text{
     font-size: 14px;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.7);
 }
-img{
-    display: block;
-    max-width: 100%;
+a{
+    text-decoration: none;
 }
 
-/* Containers settings */
-.container{
-    width: 100%;
-    max-width: 82rem;
-    margin: 0 auto;
-    padding: 0 2rem;
-}
-
-/* Buttons */
+/*===== BUTTONS PROPERTIES =====*/
 .btn-full, .btn-full-2, .btn-bordered, .btn-bordered-2{
     font-size: 14px;
     font-weight: 600;
@@ -117,7 +118,7 @@ img{
     padding: 14px 50px;
 }
 
-/* Navbar settings */
+/*===== NAVBAR SETTINGS =====*/
 .navbar{
     width: 100%;
     background: var(--my-red-color);
@@ -162,7 +163,7 @@ img{
     font-weight: bold;
 }
 
-/* First section settings */
+/*===== FIRST SECTION SETTINGS =====*/
 .first-section{
     width: 100%;
     position: relative;
@@ -229,6 +230,8 @@ img{
 .first-section h2{
     margin-top: 2rem;
 }
+
+/*===== SECOND SECTION SETTINGS =====*/
 .second-section{
     width: 100%;
 }
@@ -254,13 +257,11 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: -webkit-fill-available;
-    height: -moz-available;
+    height: 100%;
 }
 .second-section .grid-content p{
     text-align: justify;
     text-justify: inter-word;
-    font-weight: 100;
     margin: 0;
     padding: 0;
 }
@@ -282,6 +283,8 @@ img{
     padding: 2rem 0;
     display: flex;
 }
+
+/*===== THIRTH SECTION SETTINGS =====*/
 .third-section{
     width: 100%;
     position: relative;
@@ -343,6 +346,8 @@ img{
 .third-section-content div .btn-bordered, .btn-bordered-2{
     margin-top: 2rem;
 }
+
+/*===== FOURTH SECTION SETTINGS =====*/
 .fourth-section{
     width: 100%;
     position: relative;
@@ -357,7 +362,7 @@ img{
     object-position: bottom;
     z-index: -1;
 }
-.left-content{
+.fourth-section .left-content{
     width: 100%;
     height: 100%;
     display: flex;
@@ -415,6 +420,7 @@ img{
     margin-top: 2rem;
 }
 
+/*===== FOOTER SETTINGS =====*/
 .web-footer{
     background: #000;
     padding-top: 5rem;
@@ -496,24 +502,21 @@ img{
     width: 14rem;
     color: #fff;
     border: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
     appearance: none;
     background-image: url('../../media/images/angle-down-solid.svg');
     background-repeat: no-repeat, repeat;
     background-position: right 1.2em top 50%, 0 0;
     background-size: .65em auto, 100%;
-    
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
 }
 
-/* For IE (thanks to @SaiManoj) */
-select::-ms-expand {
-    display: none;
-  }
-
-
-
-
+/*===== FOURTH SECTION INPUT ITEMS PLACEHOLDER COLOR SETTINGS =====*/
+/* Moderns browsers */
+.placeholder-white::placeholder {
+    color: white;
+}
 /* WebKit, Edge */
 .placeholder-white::-webkit-input-placeholder {
     color: white;
@@ -534,9 +537,5 @@ select::-ms-expand {
 }
 /* Edge */
 .placeholder-white::-ms-input-placeholder {
-    color: white;
-}
-/* MODERN BROWSER */
-.placeholder-white::placeholder {
     color: white;
 }
